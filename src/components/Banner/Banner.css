@@ -1,6 +1,50 @@
-.banner {
+/* .banner {
     background-image: url('../../assets/banner-mini.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+    width: 950px;
+    height: 500px;
+    left: 20rem
+  } */
+  .banner {
+    background-image: url('../../assets/banner-mini.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 950px;
+    height: 500px;
+    left: 14rem
+}
+
+@media (max-width: 1200px) {
+    .banner {
+        max-width: 800px;
+        left: 9rem;
+    }
+}
+
+/* @media (max-width: 992px) {
+    .banner {
+        max-width: 650px;
+        left: 5rem
+    }
+} */
+
+@media (max-width: 768px) {
+    .banner {
+        background-size: contain;
+        max-width: 500px;
+        left: 10rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .banner {
+        background-size: contain;
+        max-width: 500px;
+        height: 300px;
+        left: 0rem;
+    }
+}

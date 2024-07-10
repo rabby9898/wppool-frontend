@@ -10,7 +10,7 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <div className="w-full flex justify-between px-3 py-5 md:px-8 md:py-6 items-center gap-3">
+    <div className="w-full flex justify-between px-3 py-5 md:px-10 md:py-6 items-center gap-3">
       <div>
         <img src={logo} alt="logo" className="w-[120px] h-[30px] md:w-full" />
       </div>
