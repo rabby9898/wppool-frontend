@@ -3,6 +3,7 @@ import Banner from "../components/Banner/Banner";
 import Potentials from "../components/Potentials/Potentials";
 import State from "../components/State/State";
 import Statistics from "../components/Statistics/Statistics";
+import Stories from "../components/Stories/Stories";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <AllCompanies />
       <Potentials />
       <State />
+      <Stories />
     </div>
   );
 };
