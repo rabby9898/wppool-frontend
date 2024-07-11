@@ -1,5 +1,6 @@
 import AllCompanies from "../components/AllCompanies/AllCompanies";
 import Banner from "../components/Banner/Banner";
+import Potentials from "../components/Potentials/Potentials";
 import Statistics from "../components/Statistics/Statistics";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <Banner />
       <Statistics />
       <AllCompanies />
+      <Potentials />
     </div>
   );
 };

@@ -77,20 +77,7 @@ const data = dates.map((date) => ({
 }));
 
 const getMonthName = (date) => {
-  const monthNames = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
   const month = new Date(date).getMonth();
   return monthNames[month];
 };
