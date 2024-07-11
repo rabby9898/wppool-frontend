@@ -1,8 +1,18 @@
 import { useState } from "react";
 import statsImg from "../../assets/Union.png";
 import { IoMdArrowDropdown } from "react-icons/io";
+import Chart from "./Chart";
 const Mainontent = () => {
   const [activeTab, setActiveTab] = useState("YTD");
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpenType, setIsOpenType] = useState(false);
+
+  const handleToggleSector = () => {
+    setIsOpen(!isOpen);
+  };
+  const handleToggleType = () => {
+    setIsOpenType(!isOpenType);
+  };
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -59,79 +69,85 @@ const Mainontent = () => {
             <div>
               <button
                 type="button"
-                className="inline-flex w-[14rem] justify-between bg-[#2042B6] gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 hover:text-black"
+                className="inline-flex w-[14rem] justify-between bg-[#2042B6] gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300"
                 id="menu-button"
-                aria-expanded="true"
+                aria-expanded={isOpen}
                 aria-haspopup="true"
+                onClick={handleToggleSector}
               >
                 Sectors
                 <IoMdArrowDropdown />
               </button>
             </div>
-            <div
-              className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-              role="menu"
-              aria-orientation="vertical"
-              aria-labelledby="menu-button"
-            >
-              <div className="py-1" role="none">
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-700"
-                  role="menuitem"
-                  id="menu-item-0"
-                >
-                  Sectors-2
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-700"
-                  role="menuitem"
-                  id="menu-item-1"
-                >
-                  Sectors-3
-                </a>
+            {isOpen && (
+              <div
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="menu-button"
+              >
+                <div className="py-1" role="none">
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-sm text-gray-700"
+                    role="menuitem"
+                    id="menu-item-0"
+                  >
+                    Sectors-2
+                  </a>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-sm text-gray-700"
+                    role="menuitem"
+                    id="menu-item-1"
+                  >
+                    Sectors-3
+                  </a>
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <div className="relative inline-block text-left my-5">
             <div>
               <button
                 type="button"
-                className="inline-flex w-[14rem] justify-between bg-[#2042B6] gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 hover:text-black"
+                className="inline-flex w-[14rem] justify-between bg-[#2042B6] gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300"
                 id="menu-button"
-                aria-expanded="true"
+                aria-expanded={isOpenType}
                 aria-haspopup="true"
+                onClick={handleToggleType}
               >
                 Types of IPO
                 <IoMdArrowDropdown />
               </button>
             </div>
-            <div
-              className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-              role="menu"
-              aria-orientation="vertical"
-              aria-labelledby="menu-button"
-            >
-              <div className="py-1" role="none">
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-700"
-                  role="menuitem"
-                  id="menu-item-0"
-                >
-                  Types of IPO-2
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-700"
-                  role="menuitem"
-                  id="menu-item-1"
-                >
-                  Types of IPO-3
-                </a>
+            {isOpenType && (
+              <div
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="menu-button"
+              >
+                <div className="py-1" role="none">
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-sm text-gray-700"
+                    role="menuitem"
+                    id="menu-item-0"
+                  >
+                    Types of IPO-2
+                  </a>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-sm text-gray-700"
+                    role="menuitem"
+                    id="menu-item-1"
+                  >
+                    Types of IPO-3
+                  </a>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
         {/* <<<---Tab MIni---->>>> */}
@@ -154,6 +170,10 @@ const Mainontent = () => {
             ))}
           </ul>
         </div>
+      </div>
+      {/* <<<---Charts---->>>>  */}
+      <div>
+        <Chart />
       </div>
     </div>
   );
