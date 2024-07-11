@@ -25,8 +25,8 @@ const Mainontent = () => {
           The WPPOOL Index
         </h1>
       </div>
-      <div className="grid grid-cols-4 items-center gap-5 mt-5">
-        <div className="w-full flex justify-between items-center gap-12 bg-[#F3F3F3] rounded-md px-3 py-5">
+      <div className="grid grid-cols-2 md:grid-cols-4 items-center gap-5 mt-5">
+        <div className="w-full flex justify-between items-center gap-5 lg:gap-12 bg-[#F3F3F3] rounded-md px-3 py-5">
           <h1 className="text-3xl text-[#FC714D] font-nantes font-normal">
             +66.2%
           </h1>

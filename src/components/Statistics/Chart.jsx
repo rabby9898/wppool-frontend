@@ -39,9 +39,7 @@ const CustomTooltip = ({ active, payload, label }) => {
                 marginRight: 5,
               }}
             ></div>
-            <span style={{ color: entry.color, fontWeight: "bold" }}>
-              {entry.name}:
-            </span>{" "}
+            <span style={{ fontWeight: "normal" }}>{entry.name}:</span>{" "}
             {`${entry.value}%`}
           </div>
         ))}
