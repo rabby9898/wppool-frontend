@@ -2,7 +2,6 @@ import t1 from "../../assets/t-1.png";
 import t2 from "../../assets/t-2.png";
 import t3 from "../../assets/t-3.png";
 import t4 from "../../assets/t-4.png";
-import t5 from "../../assets/t-5.png";
 import t6 from "../../assets/t-6.png";
 import t7 from "../../assets/t-7.png";
 import t8 from "../../assets/t-8.png";
@@ -20,6 +19,7 @@ import t19 from "../../assets/t-19.png";
 const Portfolio = () => {
   return (
     <div className="px-5 md:px-8 lg:px-16 py-5 md:py-10 lg:py-16">
+      <hr className="h-px bg-[#90B8F0] border-0 mt-8 mb-5 md:mb-32"></hr>
       <div>
         <h1 className="text-[#191618] text-5xl font-nantes">
           Selected WPPOOL Portfolio Companies
@@ -45,7 +45,7 @@ const Portfolio = () => {
           <img className="" src={t4} alt="" />
         </div>{" "}
         <div className="bg-white rounded-md w-full h-[120px] px-3 py-10 flex justify-center items-center">
-          <img className="" src={t1} alt="" />
+          <img className="" src={t6} alt="" />
         </div>
         <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center">
           <img className="" src={t7} alt="" />

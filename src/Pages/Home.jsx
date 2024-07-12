@@ -1,6 +1,7 @@
 import About from "../components/About/About";
 import AllCompanies from "../components/AllCompanies/AllCompanies";
 import Banner from "../components/Banner/Banner";
+import Footer from "../components/Footer/Footer";
 import Portfolio from "../components/Portfolio/Portfolio";
 import Potentials from "../components/Potentials/Potentials";
 import State from "../components/State/State";
@@ -18,6 +19,7 @@ const Home = () => {
       <Stories />
       <About />
       <Portfolio />
+      <Footer />
     </div>
   );
 };
