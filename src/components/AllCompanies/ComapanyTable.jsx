@@ -1,5 +1,5 @@
 import { MdOutlineArrowDropDown } from "react-icons/md";
-
+import "./Style.css";
 const data = [
   {
     company: "Adyen",
@@ -115,38 +115,38 @@ const data = [
 
 const CompanyTable = () => {
   return (
-    <div className="w-full mx-auto my-8 md:my-10">
-      <div className="overflow-x-auto">
-        <table className="w-full bg-white font-nantes">
+    <div className="w-full mx-auto my-8 md:my-10 h-[450px] font-nantes">
+      <div className="overflow-y-auto custom-scrollbar h-full">
+        <table className="w-full bg-white font-nantes dark:bg-[#2E236C] dark:text-white">
           <thead>
             <tr>
-              <th className="py-3 px-3 text-left bg-white font-semibold text-base whitespace-nowrap md:w-1/6">
+              <th className="py-3 px-3 text-left bg-white font-semibold text-lg whitespace-nowrap md:w-1/6 dark:bg-[#2E236C]">
                 Company
               </th>
-              <th className="py-3 px-3 text-left bg-white font-semibold text-base whitespace-nowrap md:w-1/12">
+              <th className="py-3 px-3 text-left bg-white font-semibold text-lg whitespace-nowrap md:w-1/12 dark:bg-[#2E236C]">
                 <div className="flex justify-start gap-1 items-center">
                   Ticker <MdOutlineArrowDropDown />
                 </div>
               </th>
-              <th className="py-3 px-3 text-left bg-white font-semibold text-base whitespace-nowrap md:w-1/6">
+              <th className="py-3 px-3 text-left bg-white font-semibold text-lg whitespace-nowrap md:w-1/6 dark:bg-[#2E236C]">
                 Vertical
               </th>
-              <th className="py-3 px-3 text-left bg-white font-semibold text-base whitespace-nowrap md:w-1/12">
+              <th className="py-3 px-3 text-left bg-white font-semibold text-lg whitespace-nowrap md:w-1/12 dark:bg-[#2E236C]">
                 Price
               </th>
-              <th className="py-3 px-3 text-left bg-white font-semibold text-base whitespace-nowrap md:w-1/6">
+              <th className="py-3 px-3 text-left bg-white font-semibold text-lg whitespace-nowrap md:w-1/6 dark:bg-[#2E236C]">
                 Market Cap ($B)
               </th>
-              <th className="py-3 px-3 text-left bg-white font-semibold text-base whitespace-nowrap md:w-1/12">
+              <th className="py-3 px-3 text-left bg-white font-semibold text-lg whitespace-nowrap md:w-1/12 dark:bg-[#2E236C]">
                 Revenue Growth
               </th>
-              <th className="py-3 px-3 text-left bg-white font-semibold text-base whitespace-nowrap md:w-1/12">
+              <th className="py-3 px-3 text-left bg-white font-semibold text-lg whitespace-nowrap md:w-1/12 dark:bg-[#2E236C]">
                 Gross Margin
               </th>
-              <th className="py-3 px-3 text-left bg-white font-semibold text-base whitespace-nowrap md:w-1/12">
+              <th className="py-3 px-3 text-left bg-white font-semibold text-lg whitespace-nowrap md:w-1/12 dark:bg-[#2E236C]">
                 EV/Revenue
               </th>
-              <th className="py-3 px-3 text-left bg-white font-semibold text-base whitespace-nowrap md:w-1/12">
+              <th className="py-3 px-3 text-left bg-white font-semibold text-lg whitespace-nowrap md:w-1/12 dark:bg-[#2E236C]">
                 YTD Performance
               </th>
             </tr>
@@ -155,25 +155,35 @@ const CompanyTable = () => {
             {data.map((row, index) => (
               <tr
                 key={index}
-                className={index % 2 === 0 ? "bg-[#F3F3F3] rounded-md" : ""}
+                className={
+                  index % 2 === 0
+                    ? "bg-[#F3F3F3] rounded-md dark:bg-[#2E236C]"
+                    : ""
+                }
               >
-                <td className="py-3 px-3 text-base">{row.company}</td>
-                <td className="py-3 px-3 text-base">{row.ticker}</td>
-                <td className="py-3 px-3 text-base">{row.vertical}</td>
-                <td className="py-3 px-3 text-base">{row.price}</td>
-                <td className="py-3 px-3 text-base text-center">
+                <td className="py-3 px-3 text-base font-medium">
+                  {row.company}
+                </td>
+                <td className="py-3 px-3 text-base font-medium">
+                  {row.ticker}
+                </td>
+                <td className="py-3 px-3 text-base font-medium">
+                  {row.vertical}
+                </td>
+                <td className="py-3 px-3 text-base font-medium">{row.price}</td>
+                <td className="py-3 px-3 text-base text-center font-medium">
                   {row.marketCap}
                 </td>
-                <td className="py-3 px-3 text-base text-center">
+                <td className="py-3 px-3 text-base text-center font-medium">
                   {row.revenueGrowth}
                 </td>
-                <td className="py-3 px-3 text-base text-center">
+                <td className="py-3 px-3 text-base text-center font-medium">
                   {row.grossMargin}
                 </td>
-                <td className="py-3 px-3 text-base text-center">
+                <td className="py-3 px-3 text-base text-center font-medium">
                   {row.evRevenue}
                 </td>
-                <td className="py-3 px-3 text-base text-center">
+                <td className="py-3 px-3 text-base text-center font-medium">
                   {row.ytdPerformance}
                 </td>
               </tr>

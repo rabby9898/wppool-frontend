@@ -6,4 +6,82 @@
     z-index: 1000;
     background-color: #ededed; 
   }
+  /* for chart */
+  .chart-container {
+    width: 100%;
+    height: 500px;
+  }
   
+  .custom-tooltip {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+  }
+  
+  .tooltip-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .color-box {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+  
+  .entry-name {
+    font-weight: normal;
+  }
+  
+  .custom-legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 12px; 
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .chart-container {
+      height: 400px;
+    }
+  
+    .custom-tooltip {
+      font-size: 10px;
+    }
+  
+    .custom-legend {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .legend-item {
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chart-container {
+      height: 300px;
+    }
+  
+    .custom-tooltip {
+      font-size: 8px;
+    }
+  
+    .custom-legend {
+      font-size: 10px;
+    }
+  
+    .legend-item {
+      font-size: 8px;
+    }
+  }

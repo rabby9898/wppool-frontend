@@ -18,58 +18,58 @@ const Mainontent = () => {
     setActiveTab(tab);
   };
   return (
-    <div>
+    <div className="w-full">
       <div className="flex justify-start gap-1 items-center">
         <img src={statsImg} alt="" />
-        <h1 className="text-4xl text-[#191618] font-nantes font-normal">
+        <h1 className="text-3xl md:text-3xl lg:text-4xl text-[#191618] font-nantes font-normal dark:text-white">
           The WPPOOL Index
         </h1>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 items-center gap-5 mt-5">
-        <div className="w-full flex justify-between items-center gap-5 lg:gap-12 bg-[#F3F3F3] rounded-md px-3 py-5">
-          <h1 className="text-3xl text-[#FC714D] font-nantes font-normal">
+      <div className="w-full grid md:grid-cols-2 lg:grid-cols-4 items-center gap-5 mt-5">
+        <div className="w-full flex justify-between items-center gap-5 lg:gap-12 bg-[#F3F3F3] rounded-md px-3 py-5 dark:bg-[#2E236C] dark:text-white">
+          <h1 className="text-3xl md:text-2xl lg:text-3xl text-[#FC714D] font-nantes font-normal">
             +66.2%
           </h1>
-          <p className="text-[#191618] text-right pr-2 text-sm border-[#FC714D] border-r-[6px]">
+          <p className="text-[#191618] text-right pr-2 text-sm border-[#FC714D] border-r-[6px] dark:text-white">
             WPPOOL Index
           </p>
         </div>
 
-        <div className="w-full flex justify-between items-center gap-12 bg-[#F3F3F3] rounded-md px-3 py-5">
-          <h1 className="text-3xl text-[#615DE3] font-nantes font-normal">
+        <div className="w-full flex justify-between items-center gap-12 bg-[#F3F3F3] rounded-md px-3 py-5 dark:bg-[#2E236C]">
+          <h1 className="text-3xl md:text-2xl lg:text-3xl text-[#615DE3] font-nantes font-normal">
             +26.6%
           </h1>
-          <p className="text-[#191618] text-right pr-2 text-sm border-[#615DE3] border-r-[6px]">
+          <p className="text-[#191618] text-right pr-2 text-sm border-[#615DE3] border-r-[6px] dark:text-white">
             Goolge Index
           </p>
         </div>
 
-        <div className="w-full flex justify-between items-center gap-12 bg-[#F3F3F3] rounded-md px-3 py-5">
-          <h1 className="text-3xl text-[#7CA63A] font-nantes font-normal">
+        <div className="w-full flex justify-between items-center gap-12 bg-[#F3F3F3] rounded-md px-3 py-5 dark:bg-[#2E236C]">
+          <h1 className="text-3xl md:text-2xl lg:text-3xl text-[#7CA63A] font-nantes font-normal ">
             +34.1%
           </h1>
-          <p className="text-[#191618] text-right pr-2 text-sm py-[10px] border-[#7CA63A] border-r-[6px]">
+          <p className="text-[#191618] text-right pr-2 text-sm py-[10px] border-[#7CA63A] border-r-[6px] dark:text-white">
             Mircrosoft
           </p>
         </div>
 
-        <div className="w-full flex justify-between items-center gap-20 bg-[#F3F3F3] rounded-md px-3 py-5">
-          <h1 className="text-3xl text-[#6F34A1] font-nantes font-normal">
+        <div className="w-full flex justify-between items-center gap-20 bg-[#F3F3F3] rounded-md px-3 py-5 dark:bg-[#2E236C]">
+          <h1 className="text-3xl md:text-2xl lg:text-3xl text-[#6F34A1] font-nantes font-normal">
             +17%
           </h1>
-          <p className="text-[#191618] text-right pr-2 text-sm border-[#6F34A1] border-r-[6px]">
+          <p className="text-[#191618] text-right pr-2 text-sm border-[#6F34A1] border-r-[6px] dark:text-white">
             Twitter Index
           </p>
         </div>
       </div>
       {/* <<<---Dropdown---->>>> */}
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col lg:flex-row md:justify-between items-center">
         <div className="flex justify-between items-center gap-5">
           <div className="relative inline-block text-left my-5">
             <div>
               <button
                 type="button"
-                className="inline-flex w-[14rem] justify-between bg-[#2042B6] gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300"
+                className="inline-flex w-[7rem] md:w-[14rem] justify-between bg-[#2042B6] gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-[#2E236C]"
                 id="menu-button"
                 aria-expanded={isOpen}
                 aria-haspopup="true"
@@ -81,7 +81,7 @@ const Mainontent = () => {
             </div>
             {isOpen && (
               <div
-                className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-[#2E236C]"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button"
@@ -89,7 +89,7 @@ const Mainontent = () => {
                 <div className="py-1" role="none">
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-white"
                     role="menuitem"
                     id="menu-item-0"
                   >
@@ -97,7 +97,7 @@ const Mainontent = () => {
                   </a>
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-white"
                     role="menuitem"
                     id="menu-item-1"
                   >
@@ -111,7 +111,7 @@ const Mainontent = () => {
             <div>
               <button
                 type="button"
-                className="inline-flex w-[14rem] justify-between bg-[#2042B6] gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300"
+                className="inline-flex w-[10rem] md:w-[14rem] justify-between bg-[#2042B6] gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-[#2E236C]"
                 id="menu-button"
                 aria-expanded={isOpenType}
                 aria-haspopup="true"
@@ -123,7 +123,7 @@ const Mainontent = () => {
             </div>
             {isOpenType && (
               <div
-                className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-[#2E236C]"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button"
@@ -131,7 +131,7 @@ const Mainontent = () => {
                 <div className="py-1" role="none">
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-white"
                     role="menuitem"
                     id="menu-item-0"
                   >
@@ -139,7 +139,7 @@ const Mainontent = () => {
                   </a>
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-white"
                     role="menuitem"
                     id="menu-item-1"
                   >
@@ -152,7 +152,7 @@ const Mainontent = () => {
         </div>
         {/* <<<---Tab MIni---->>>> */}
         <div className="w-[280px]">
-          <ul className="grid grid-flow-col text-center text-gray-500 bg-gray-100 rounded-full p-1">
+          <ul className="grid grid-flow-col text-center text-gray-500 bg-gray-100 rounded-full p-1 dark:bg-[#2E236C]">
             {["1Y", "YTD", "6M", "1M", "1W"].map((tab) => (
               <li key={tab}>
                 <a
@@ -172,8 +172,9 @@ const Mainontent = () => {
         </div>
       </div>
       {/* <<<---Charts---->>>>  */}
-      <div>
+      <div className="mt-5 lg:mt-0">
         <Chart />
+        {/* <CustomLineChart /> */}
       </div>
     </div>
   );

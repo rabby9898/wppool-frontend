@@ -1,3 +1,4 @@
+import "./Style.css";
 import {
   LineChart,
   Line,
@@ -13,33 +14,15 @@ import {
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (
-      <div
-        className="custom-tooltip"
-        style={{
-          backgroundColor: "white",
-          padding: "10px",
-          border: "1px solid #ccc",
-        }}
-      >
+      <div className="custom-tooltip">
         <p className="label">{`${label}`}</p>
         {payload.map((entry, index) => (
-          <div
-            key={index}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginBottom: "5px",
-            }}
-          >
+          <div key={index} className="tooltip-entry">
             <div
-              style={{
-                width: 10,
-                height: 10,
-                backgroundColor: entry.color,
-                marginRight: 5,
-              }}
+              className="color-box"
+              style={{ backgroundColor: entry.color }}
             ></div>
-            <span style={{ fontWeight: "normal" }}>{entry.name}:</span>{" "}
+            <span className="entry-name">{entry.name}:</span>
             {`${entry.value}%`}
           </div>
         ))}
@@ -55,19 +38,20 @@ const getRandomPercentage = (min = 0, max = 100) => {
   return (Math.random() * (max - min) + min).toFixed(1);
 };
 
-/*******every 10 days between two dates**********/
-const generateDates = (start, end) => {
+/*******Generate Data for First Day of Each Month**********/
+const generateFirstDayOfMonthData = (start, end) => {
   const dateArray = [];
   let currentDate = new Date(start);
   const endDate = new Date(end);
   while (currentDate <= endDate) {
     dateArray.push(new Date(currentDate));
-    currentDate.setDate(currentDate.getDate() + 10);
+    currentDate.setMonth(currentDate.getMonth() + 1);
+    currentDate.setDate(1); // Set to the first day of the month
   }
   return dateArray;
 };
 
-const dates = generateDates("2024-01-01", "2024-07-31");
+const dates = generateFirstDayOfMonthData("2024-01-01", "2024-07-01");
 const data = dates.map((date) => ({
   date: date.toISOString().split("T")[0],
   WPPOOL: getRandomPercentage(10, 80),
@@ -76,79 +60,39 @@ const data = dates.map((date) => ({
   TwitterIndex: getRandomPercentage(20, 90),
 }));
 
-const getMonthName = (date) => {
-  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
-  const month = new Date(date).getMonth();
-  return monthNames[month];
-};
+const staticMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
 
-const CustomizedAxisTick = ({ x, y, payload }) => (
+const CustomizedAxisTick = ({ x, y, index }) => (
   <g transform={`translate(${x},${y})`}>
     <text x={0} y={0} dy={16} textAnchor="middle" fill="#666">
-      {getMonthName(payload.value)}
+      {staticMonths[index % staticMonths.length]}
     </text>
   </g>
 );
 
 const renderCustomLegend = () => (
-  <div
-    style={{
-      display: "flex",
-      justifyContent: "center",
-      gap: "20px",
-      width: "100%",
-      marginTop: "16px",
-    }}
-  >
-    <div style={{ display: "flex", alignItems: "center" }}>
-      <div
-        style={{
-          width: 10,
-          height: 10,
-          backgroundColor: "#FC714D",
-          marginRight: 5,
-        }}
-      ></div>
+  <div className="custom-legend">
+    <div className="legend-item">
+      <div className="color-box" style={{ backgroundColor: "#FC714D" }}></div>
       WPPOOL
     </div>
-    <div style={{ display: "flex", alignItems: "center" }}>
-      <div
-        style={{
-          width: 10,
-          height: 10,
-          backgroundColor: "#615DE3",
-          marginRight: 5,
-        }}
-      ></div>
+    <div className="legend-item">
+      <div className="color-box" style={{ backgroundColor: "#615DE3" }}></div>
       Google
     </div>
-    <div style={{ display: "flex", alignItems: "center" }}>
-      <div
-        style={{
-          width: 10,
-          height: 10,
-          backgroundColor: "#AFCD80",
-          marginRight: 5,
-        }}
-      ></div>
+    <div className="legend-item">
+      <div className="color-box" style={{ backgroundColor: "#AFCD80" }}></div>
       Microsoft
     </div>
-    <div style={{ display: "flex", alignItems: "center" }}>
-      <div
-        style={{
-          width: 10,
-          height: 10,
-          backgroundColor: "#6F34A1",
-          marginRight: 5,
-        }}
-      ></div>
+    <div className="legend-item">
+      <div className="color-box" style={{ backgroundColor: "#6F34A1" }}></div>
       Twitter
     </div>
   </div>
 );
 
 const Chart = () => (
-  <div style={{ width: "100%", height: 500 }}>
+  <div className="chart-container">
     <ResponsiveContainer>
       <LineChart
         data={data}

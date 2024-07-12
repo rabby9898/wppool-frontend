@@ -5,7 +5,7 @@ import { IoArrowDownOutline } from "react-icons/io5";
 const Banner = () => {
   // bg-[#2042B6]
   return (
-    <div className="relative bg-[#2042B6] w-full h-[718px] z-50">
+    <div className="relative bg-[#2042B6] w-full h-[718px] z-50 rounded-2xl shadow-xl">
       <Navbar />
       <div className="flex flex-row-reverse md:flex-col">
         <div className="banner absolute top-[100px]"></div>
