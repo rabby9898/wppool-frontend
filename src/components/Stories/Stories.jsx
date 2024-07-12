@@ -94,6 +94,7 @@ const Stories = () => {
           </div>
         </div>
       </div>
+      <hr className="h-px bg-[#90B8F0] border-0 mt-8"></hr>
     </div>
   );
 };

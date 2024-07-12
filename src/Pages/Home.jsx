@@ -1,5 +1,7 @@
+import About from "../components/About/About";
 import AllCompanies from "../components/AllCompanies/AllCompanies";
 import Banner from "../components/Banner/Banner";
+import Portfolio from "../components/Portfolio/Portfolio";
 import Potentials from "../components/Potentials/Potentials";
 import State from "../components/State/State";
 import Statistics from "../components/Statistics/Statistics";
@@ -14,6 +16,8 @@ const Home = () => {
       <Potentials />
       <State />
       <Stories />
+      <About />
+      <Portfolio />
     </div>
   );
 };

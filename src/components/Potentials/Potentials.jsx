@@ -1,4 +1,3 @@
-import React from "react";
 import p1 from "../../assets/p-1.png";
 import p2 from "../../assets/p2.png";
 import p3 from "../../assets/p-3.png";
