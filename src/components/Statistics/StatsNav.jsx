@@ -1,13 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import logo from "../../assets/logo-black.png";
 import { IoShareSocialSharp } from "react-icons/io5";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaLightbulb } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import "./Style.css";
+import { ModeContext } from "../../Provider/DarkMode";
+import { MdDarkMode } from "react-icons/md";
 const StatsNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
-
+  const { toggleDarkMode, isDarkMode } = useContext(ModeContext);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -27,7 +29,7 @@ const StatsNav = () => {
   }, []);
 
   return (
-    <div id="navbar-wrapper">
+    <div id="navbar-wrapper" className={`${isDarkMode && "dark"}`}>
       <div id="section-id" style={{ height: "50px" }}></div>
       <div
         className={`w-full flex justify-between px-3 py-5 md:px-10 md:py-6 items-center gap-3 bg-[#ededed] dark:bg-[#17153B] ${
@@ -38,7 +40,19 @@ const StatsNav = () => {
           <img src={logo} alt="logo" className="w-[120px] h-[30px] md:w-full" />
         </div>
         <div className="flex justify-start gap-3 md:gap-5">
-          <button className="px-4 py-2 md:px-4 md:py-3 bg-transparent border-[1px] border-[#b0cc81] rounded-full text-[#181617] dark:text-white cursor-pointer">
+          <div className="">
+            <button
+              onClick={toggleDarkMode}
+              className="text-3xl border-[1px] border-white bg-white rounded-full px-2 py-2 md:px-3 md:py-3"
+            >
+              {isDarkMode ? (
+                <FaLightbulb className="text-yellow-400"></FaLightbulb>
+              ) : (
+                <MdDarkMode />
+              )}
+            </button>
+          </div>
+          <button className="px-4 py-2 md:px-5 md:py-3 bg-transparent border-[1px] border-[#b0cc81] rounded-full text-[#181617] dark:text-white cursor-pointer">
             <IoShareSocialSharp />
           </button>
           <button className="w-auto px-3 py-2 md:px-5 md:py-3 bg-transparent border-[1px] border-[#1e43b5] rounded-full text-[#181617] cursor-pointer dark:text-white">

@@ -57,23 +57,23 @@ const Slider = () => {
         <div className="flex justify-start gap-5 items-center">
           <div className="flex justify-start gap-3 items-center">
             <button
-              className="w-auto p-3 lg:p-5 bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl rounded-full text-[#1e43b5] cursor-pointer"
+              className="w-auto p-3 lg:p-5 bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl rounded-full text-[#1e43b5] cursor-pointer dark:bg-[#2E236C] dark:text-white"
               onClick={handlePrev}
             >
               <FaArrowLeftLong />
             </button>
             <button
-              className="w-auto p-3 lg:p-5 bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl rounded-full text-[#1e43b5] cursor-pointer"
+              className="w-auto p-3 lg:p-5 bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl rounded-full text-[#1e43b5] cursor-pointer dark:bg-[#2E236C] dark:text-white"
               onClick={handleNext}
             >
               <FaArrowRightLong />
             </button>
           </div>
-          <div className="flex justify-start gap-1 items-center">
+          <div className="flex justify-start gap-1 items-center dark:text-white">
             <p>Pages</p>
             <button
               type="button"
-              className="inline-flex w-[7rem] lg:w-[10rem] font-normal justify-between items-center bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl gap-x-1 rounded-full px-3 lg:px-6 py-3 lg:py-5 mx-auto text-[12px] lg:text-[16px] text-black ring-1 ring-inset ring-gray-300 font-sans"
+              className="inline-flex w-[7rem] lg:w-[10rem] font-normal justify-between items-center bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl gap-x-1 rounded-full px-3 lg:px-6 py-3 lg:py-5 mx-auto text-[12px] lg:text-[16px] text-black ring-1 ring-inset ring-gray-300 font-sans dark:bg-[#2E236C] dark:text-white"
               id="menu-button"
               aria-haspopup="true"
             >
@@ -84,7 +84,7 @@ const Slider = () => {
           </div>
         </div>
         <div className="mr-0 mt-10 md:mt-0 lg:mr-[10rem]">
-          <button className="w-auto px-3 lg:px-6 py-3 lg:py-5 bg-[#1e43b5] border-[1px] border-[#1e43b5] shadow-2xl rounded-full text-white cursor-pointer">
+          <button className="w-auto px-3 lg:px-6 py-3 lg:py-5 bg-[#1e43b5] border-[1px] border-[#1e43b5] shadow-2xl rounded-full text-white cursor-pointer dark:bg-[#2E236C]">
             <span className="md:hidden">Download Report</span>
             <span className="hidden md:inline">Download the 2024 Report</span>
           </button>

@@ -21,69 +21,69 @@ const Portfolio = () => {
     <div className="px-5 md:px-8 lg:px-16 py-5 md:py-10 lg:py-16">
       <hr className="h-px bg-[#90B8F0] border-0 mt-8 mb-5 md:mb-32"></hr>
       <div>
-        <h1 className="text-[#191618] text-3xl md:text-5xl font-nantes">
+        <h1 className="text-[#191618] text-3xl md:text-5xl font-nantes dark:text-gray-200">
           Selected WPPOOL Portfolio Companies
         </h1>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center gap-5 my-8">
-        <div className="bg-white rounded-md w-full h-[120px] px-3 py-10 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-3 py-10 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t1} alt="" />
         </div>
-        <div className="bg-white rounded-md w-full h-[120px] px-3 py-8 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-3 py-8 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t2} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-3 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-3 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t3} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-9 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-9 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t4} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t2} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-9 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-9 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t4} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-3 py-10 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-3 py-10 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t6} alt="" />
         </div>
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t7} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t7} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-6 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-6 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t8} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-9 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-9 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t9} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-5 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-5 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t10} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-10 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-10 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t11} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-4 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-4 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t12} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-9 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-9 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t13} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-10 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-10 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t14} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t15} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-8 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t16} alt="" />
         </div>{" "}
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-4 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-4 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t17} alt="" />
         </div>
-        <div className="bg-white rounded-md w-full h-[120px] px-4 py-4 flex justify-center items-center">
+        <div className="bg-white rounded-md w-full h-[120px] px-4 py-4 flex justify-center items-center dark:bg-[#2E236C]">
           <img className="" src={t19} alt="" />
         </div>
       </div>
