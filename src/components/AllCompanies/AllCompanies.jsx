@@ -7,7 +7,7 @@ const AllCompanies = () => {
       <div className="bg-white rounded-2xl py-3 md:pt-16 px-5 md:px-20 shadow-xl dark:bg-[#17153B]">
         <div className="w-full flex justify-between items-center">
           <div className="w-full">
-            <h1 className="text-2xl md:text-5xl font-nantes dark:text-white">
+            <h1 className="text-2xl md:text-5xl font-nantes dark:text-gray-300">
               All companies
             </h1>
           </div>
@@ -15,9 +15,9 @@ const AllCompanies = () => {
             <input
               type="text"
               placeholder="Search Companies"
-              className="input input-bordered w-full px-12 text-[#191618] h-[60px] text-2xl bg-[#ededed] dark:bg-transparent dark:text-white dark:border dark:border-white"
+              className="input input-bordered w-full px-12 text-[#191618] h-[60px] text-2xl bg-[#ededed] dark:bg-transparent dark:text-gray-300 dark:border dark:border-white"
             />
-            <IoMdSearch className="absolute text-2xl top-[20px] text-[#191618] left-[18px] dark:text-white" />
+            <IoMdSearch className="absolute text-2xl top-[20px] text-[#191618] left-[18px] dark:text-gray-300" />
           </div>
         </div>
         <div>

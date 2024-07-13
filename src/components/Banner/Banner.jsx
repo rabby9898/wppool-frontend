@@ -12,28 +12,32 @@ const Banner = () => {
 
         <div className="text-white mt-80 md:mt-24 grid grid-cols-2 md:grid-cols-1 items-center ">
           <div className="my-8  px-10">
-            <h1 className="text-4xl font-nantes">
+            <h1 className="text-4xl font-nantes dark:text-gray-300">
               <CountUp end={60} duration={2.5} />
             </h1>
-            <p className="text-base font-messina">Companies</p>
+            <p className="text-base font-messina dark:text-gray-300">
+              Companies
+            </p>
           </div>
           <div className="my-8  px-10">
-            <h1 className="text-4xl font-nantes">
+            <h1 className="text-4xl font-nantes dark:text-gray-300">
               <CountUp end={100} duration={2.5} prefix="$" suffix="B" />
             </h1>
-            <p className="text-base font-messina">Market cap</p>
+            <p className="text-base font-messina dark:text-gray-300">
+              Market cap
+            </p>
           </div>
           <div className="my-8  px-10">
-            <h1 className="text-4xl font-nantes">
+            <h1 className="text-4xl font-nantes dark:text-gray-300">
               <CountUp end={3.5} duration={2.5} suffix="X" decimals={1} />
             </h1>
             <p className="text-base font-messina">Revenue multiple</p>
           </div>
           <div className="my-8  px-10">
-            <h1 className="text-4xl font-nantes">
+            <h1 className="text-4xl font-nantes dark:text-gray-300">
               <CountUp end={60} duration={2.5} suffix="%" />
             </h1>
-            <p className="text-base font-messina">
+            <p className="text-base font-messina dark:text-gray-300">
               LTM avg. revenue growth rate
             </p>
           </div>
