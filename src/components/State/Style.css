@@ -1,0 +1,11 @@
+.sliderBg {
+    position: relative;
+    background-image: url('../../assets/sliderbg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+   
+   
+}

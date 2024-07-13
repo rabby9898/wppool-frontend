@@ -1,10 +1,11 @@
 import logo from "../../assets/logo.png";
-import { IoShareSocial, IoShareSocialSharp } from "react-icons/io5";
+import { IoShareSocialSharp } from "react-icons/io5";
 import { FaBars, FaLightbulb } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { ModeContext } from "../../Provider/DarkMode";
-import { MdDarkMode, MdShare } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { toggleDarkMode, isDarkMode } = useContext(ModeContext);
@@ -14,9 +15,9 @@ const Navbar = () => {
   return (
     <div className={`${isDarkMode && "dark"}`}>
       <div className="w-full flex justify-between px-3 py-5 md:px-10 md:py-6 items-center gap-3">
-        <div>
+        <Link to="/">
           <img src={logo} alt="logo" className="w-[120px] h-[30px] md:w-full" />
-        </div>
+        </Link>
         <div className="flex justify-start gap-2 md:gap-5 items-center">
           <div className="">
             <button

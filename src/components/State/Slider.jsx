@@ -92,7 +92,7 @@ const Slider = () => {
             <p>Of 37</p>
           </div>
         </div>
-        <div className="mr-0 mt-10 md:mt-0 lg:mr-[10rem]">
+        <div className="mr-0 mt-10 md:mt-0 lg:mr-[10rem] z-50">
           <button className="w-auto px-3 lg:px-6 py-3 lg:py-5 bg-[#1e43b5] border-[1px] border-[#1e43b5] shadow-2xl rounded-full text-white cursor-pointer dark:bg-[#2E236C]">
             <span className="md:hidden">Download Report</span>
             <span className="hidden md:inline">Download the 2024 Report</span>

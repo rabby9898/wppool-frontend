@@ -11,7 +11,7 @@ import p10 from "../../assets/p-10.png";
 
 const Potentials = () => {
   return (
-    <div className="px-5 md:px-8 lg:px-20 py-10 lg:py-16">
+    <div className="px-5 md:px-8 lg:px-20 py-10 lg:py-32">
       <div>
         <h1 className="text-3xl md:text-5xl text-[#191618] font-nantes font-normal dark:text-gray-300">
           Potential Future Listings

@@ -39,7 +39,7 @@ const StatsNav = () => {
         }`}
       >
         {isDarkMode ? (
-          <Link to="/">
+          <Link to={"/"}>
             <img
               src={logoWhite}
               alt="logo"
@@ -47,7 +47,7 @@ const StatsNav = () => {
             />
           </Link>
         ) : (
-          <Link to="/">
+          <Link to={"/"}>
             <img
               src={logo}
               alt="logo"
