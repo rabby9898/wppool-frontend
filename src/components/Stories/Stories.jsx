@@ -3,16 +3,16 @@ import c2 from "../../assets/c-2.png";
 
 const Stories = () => {
   return (
-    <div className="px-5 md:px-8 lg:px-16 py-5 md:py-10 lg:py-32">
+    <div className="px-5 md:px-8 lg:px-16 py-5 md:py-10 lg:py-24">
       <div className="mb-10">
-        <h1 className="text-[#191618] text-5xl font-nantes dark:text-white">
+        <h1 className="text-[#191618] text-5xl font-nantes dark:text-gray-300">
           Stories & Ideas
         </h1>
-        <p className="text-xl font-sans dark:text-white">
+        <p className="text-xl font-sans dark:text-gray-300">
           The latest news and updates
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-20 md:gap-10 lg:gap-5 py-20 mt-5 md:mt-16 lg:mt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-20 md:gap-10 lg:gap-5 py-10 mt-5 md:mt-16 lg:mt-20">
         <div className="relative w-full lg:w-[420px] lg:h-[250px] px-5 py-5 bg-white rounded-md dark:bg-[#2E236C]">
           <img
             className="absolute bottom-[10rem] md:bottom-[8rem] lg:bottom-[10rem]"
@@ -20,7 +20,7 @@ const Stories = () => {
             alt=""
           />
           <div className="mt-[4rem]">
-            <p className="text-[#2042B6] font-sans text-base dark:text-white">
+            <p className="text-[#2042B6] font-sans text-base dark:text-gray-300">
               By: Sahabuddin Sagor
             </p>
             <p className="my-3 font-nantes text-[#191618] text-lg dark:text-gray-300">
@@ -39,7 +39,7 @@ const Stories = () => {
             alt=""
           />
           <div className="mt-[5.9rem]">
-            <p className="text-[#2042B6] font-sans text-base dark:text-white">
+            <p className="text-[#2042B6] font-sans text-base dark:text-gray-300">
               By: Nayem Khan
             </p>
             <p className="my-3 font-nantes text-[#191618] text-lg dark:text-gray-300">
@@ -57,7 +57,7 @@ const Stories = () => {
             alt=""
           />
           <div className="mt-[4rem]">
-            <p className="text-[#2042B6] font-sans text-base dark:text-white">
+            <p className="text-[#2042B6] font-sans text-base dark:text-gray-300">
               By: Sahabuddin Sagor
             </p>
             <p className="my-3 font-nantes text-[#191618] text-lg dark:text-gray-300">
@@ -76,7 +76,7 @@ const Stories = () => {
             alt=""
           />
           <div className="mt-[4rem]">
-            <p className="text-[#2042B6] font-sans text-base dark:text-white">
+            <p className="text-[#2042B6] font-sans text-base dark:text-gray-300">
               By: Sahabuddin Sagor
             </p>
             <p className="my-3 font-nantes text-[#191618] text-lg dark:text-gray-300">
@@ -95,7 +95,7 @@ const Stories = () => {
             alt=""
           />
           <div className="mt-[5.9rem]">
-            <p className="text-[#2042B6] font-sans text-base dark:text-white">
+            <p className="text-[#2042B6] font-sans text-base dark:text-gray-300">
               By: Nayem Khan
             </p>
             <p className="my-3 font-nantes text-[#191618] text-lg dark:text-gray-300">
@@ -113,7 +113,7 @@ const Stories = () => {
             alt=""
           />
           <div className="mt-[4rem]">
-            <p className="text-[#2042B6] font-sans text-base dark:text-white">
+            <p className="text-[#2042B6] font-sans text-base dark:text-gray-300">
               By: Sahabuddin Sagor
             </p>
             <p className="my-3 font-nantes text-[#191618] text-lg dark:text-gray-300">
@@ -126,7 +126,7 @@ const Stories = () => {
           </div>
         </div>
       </div>
-      <hr className="h-px bg-[#90B8F0] border-0 mt-8"></hr>
+      <hr className="h-px hidden lg:block bg-[#90B8F0] border-0 mt-20"></hr>
     </div>
   );
 };

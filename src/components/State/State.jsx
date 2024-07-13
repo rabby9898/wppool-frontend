@@ -5,7 +5,7 @@ const State = () => {
   return (
     <div className="px-5 md:px-8 lg:px-16 py-5 md:py-10 lg:py-16">
       <div>
-        <h1 className="text-4xl md:text-5xl font-nantes dark:text-white">
+        <h1 className="text-4xl md:text-5xl font-nantes dark:text-gray-300">
           State Of USA
         </h1>
         <button
@@ -17,7 +17,7 @@ const State = () => {
           2024
           <IoMdArrowDropdown />
         </button>
-        <p className="text-base font-sans mb-8 dark:text-white">
+        <p className="text-base font-sans mb-8 dark:text-gray-300">
           Click through the slides or download the report to view natively on
           your device.
         </p>

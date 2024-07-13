@@ -18,8 +18,8 @@ import t19 from "../../assets/t-19.png";
 
 const Portfolio = () => {
   return (
-    <div className="px-5 md:px-8 lg:px-16 py-5 md:py-10 lg:py-16">
-      <hr className="h-px bg-[#90B8F0] border-0 mt-8 mb-5 md:mb-32"></hr>
+    <div className="px-5 md:px-8 lg:px-16 py-10 lg:py-16">
+      <hr className="h-px hidden lg:block bg-[#90B8F0] border-0 mt-8 mb-5 md:mb-32"></hr>
       <div>
         <h1 className="text-[#191618] text-3xl md:text-5xl font-nantes dark:text-gray-200">
           Selected WPPOOL Portfolio Companies

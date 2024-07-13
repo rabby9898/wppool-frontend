@@ -13,10 +13,10 @@ const Potentials = () => {
   return (
     <div className="px-5 md:px-8 lg:px-20 py-10 lg:py-16">
       <div>
-        <h1 className="text-3xl md:text-5xl text-[#191618] font-nantes font-normal dark:text-white">
+        <h1 className="text-3xl md:text-5xl text-[#191618] font-nantes font-normal dark:text-gray-300">
           Potential Future Listings
         </h1>
-        <p className="text-base font-sans font-normal text-[#191618] my-7 dark:text-white">
+        <p className="text-base font-sans font-normal text-[#191618] my-7 dark:text-gray-300">
           Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis. <br />
           Class aptent taciti sociosqu ad litora torquent per conubia nostra,

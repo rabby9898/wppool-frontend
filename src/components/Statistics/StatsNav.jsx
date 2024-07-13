@@ -1,11 +1,13 @@
 import { useState, useEffect, useContext } from "react";
 import logo from "../../assets/logo-black.png";
+import logoWhite from "../../assets/logo.png";
 import { IoShareSocialSharp } from "react-icons/io5";
 import { FaBars, FaLightbulb } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import "./Style.css";
 import { ModeContext } from "../../Provider/DarkMode";
 import { MdDarkMode } from "react-icons/md";
+import { Link } from "react-router-dom";
 const StatsNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
@@ -36,9 +38,25 @@ const StatsNav = () => {
           isFixed ? "fixed-navbar" : "rounded-xl"
         }`}
       >
-        <div>
-          <img src={logo} alt="logo" className="w-[120px] h-[30px] md:w-full" />
-        </div>
+        {isDarkMode ? (
+          <Link to="/">
+            <img
+              src={logoWhite}
+              alt="logo"
+              className="w-[120px] h-[30px] md:w-full"
+            />
+          </Link>
+        ) : (
+          <Link to="/">
+            <img
+              src={logo}
+              alt="logo"
+              className="w-[120px] h-[30px] md:w-full"
+            />
+          </Link>
+        )}
+        <div></div>
+        <div></div>
         <div className="flex justify-start gap-3 md:gap-5">
           <div className="">
             <button

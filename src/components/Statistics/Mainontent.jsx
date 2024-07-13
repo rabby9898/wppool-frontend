@@ -21,16 +21,16 @@ const Mainontent = () => {
     <div className="w-full">
       <div className="flex justify-start gap-1 items-center">
         <img src={statsImg} alt="" />
-        <h1 className="text-3xl md:text-3xl lg:text-4xl text-[#191618] font-nantes font-normal dark:text-white">
+        <h1 className="text-3xl md:text-3xl lg:text-4xl text-[#191618] font-nantes font-normal dark:text-gray-300">
           The WPPOOL Index
         </h1>
       </div>
       <div className="w-full grid md:grid-cols-2 lg:grid-cols-4 items-center gap-5 mt-5">
-        <div className="w-full flex justify-between items-center gap-5 lg:gap-12 bg-[#F3F3F3] rounded-md px-3 py-5 dark:bg-[#2E236C] dark:text-white">
+        <div className="w-full flex justify-between items-center gap-5 lg:gap-12 bg-[#F3F3F3] rounded-md px-3 py-5 dark:bg-[#2E236C] dark:text-gray-300">
           <h1 className="text-3xl md:text-2xl lg:text-3xl text-[#FC714D] font-nantes font-normal">
             +66.2%
           </h1>
-          <p className="text-[#191618] text-right pr-2 text-sm border-[#FC714D] border-r-[6px] dark:text-white">
+          <p className="text-[#191618] text-right pr-2 text-sm border-[#FC714D] border-r-[6px] dark:text-gray-300">
             WPPOOL Index
           </p>
         </div>
@@ -39,7 +39,7 @@ const Mainontent = () => {
           <h1 className="text-3xl md:text-2xl lg:text-3xl text-[#615DE3] font-nantes font-normal">
             +26.6%
           </h1>
-          <p className="text-[#191618] text-right pr-2 text-sm border-[#615DE3] border-r-[6px] dark:text-white">
+          <p className="text-[#191618] text-right pr-2 text-sm border-[#615DE3] border-r-[6px] dark:text-gray-300">
             Goolge Index
           </p>
         </div>
@@ -48,7 +48,7 @@ const Mainontent = () => {
           <h1 className="text-3xl md:text-2xl lg:text-3xl text-[#7CA63A] font-nantes font-normal ">
             +34.1%
           </h1>
-          <p className="text-[#191618] text-right pr-2 text-sm py-[10px] border-[#7CA63A] border-r-[6px] dark:text-white">
+          <p className="text-[#191618] text-right pr-2 text-sm py-[10px] border-[#7CA63A] border-r-[6px] dark:text-gray-300">
             Mircrosoft
           </p>
         </div>
@@ -57,7 +57,7 @@ const Mainontent = () => {
           <h1 className="text-3xl md:text-2xl lg:text-3xl text-[#6F34A1] font-nantes font-normal">
             +17%
           </h1>
-          <p className="text-[#191618] text-right pr-2 text-sm border-[#6F34A1] border-r-[6px] dark:text-white">
+          <p className="text-[#191618] text-right pr-2 text-sm border-[#6F34A1] border-r-[6px] dark:text-gray-300">
             Twitter Index
           </p>
         </div>
@@ -89,7 +89,7 @@ const Mainontent = () => {
                 <div className="py-1" role="none">
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-white"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
                     role="menuitem"
                     id="menu-item-0"
                   >
@@ -97,7 +97,7 @@ const Mainontent = () => {
                   </a>
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-white"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
                     role="menuitem"
                     id="menu-item-1"
                   >
@@ -131,7 +131,7 @@ const Mainontent = () => {
                 <div className="py-1" role="none">
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-white"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
                     role="menuitem"
                     id="menu-item-0"
                   >
@@ -139,7 +139,7 @@ const Mainontent = () => {
                   </a>
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 dark:text-white"
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
                     role="menuitem"
                     id="menu-item-1"
                   >

@@ -1,10 +1,10 @@
 import logo from "../../assets/logo.png";
-import { IoShareSocialSharp } from "react-icons/io5";
+import { IoShareSocial, IoShareSocialSharp } from "react-icons/io5";
 import { FaBars, FaLightbulb } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { ModeContext } from "../../Provider/DarkMode";
-import { MdDarkMode } from "react-icons/md";
+import { MdDarkMode, MdShare } from "react-icons/md";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { toggleDarkMode, isDarkMode } = useContext(ModeContext);
@@ -17,11 +17,11 @@ const Navbar = () => {
         <div>
           <img src={logo} alt="logo" className="w-[120px] h-[30px] md:w-full" />
         </div>
-        <div className="flex justify-start gap-3 md:gap-5">
+        <div className="flex justify-start gap-2 md:gap-5 items-center">
           <div className="">
             <button
               onClick={toggleDarkMode}
-              className="text-3xl border-[1px] border-white bg-white rounded-full px-2 py-2 md:px-3 md:py-3"
+              className="text-2xl border-[1px] border-white bg-white rounded-full px-2 py-2 md:px-3 md:py-3"
             >
               {isDarkMode ? (
                 <FaLightbulb className="text-yellow-400"></FaLightbulb>
@@ -30,7 +30,7 @@ const Navbar = () => {
               )}
             </button>
           </div>
-          <button className=" px-4 py-2 md:px-5 md:py-3 bg-transparent border-[1px] border-white rounded-full text-white cursor-pointer">
+          <button className=" px-3 py-3 md:px-4 md:py-4 bg-transparent border-[1px] border-white rounded-full text-white cursor-pointer">
             <IoShareSocialSharp />
           </button>
           <button className="w-auto px-3 py-2 md:px-5 md:py-3 bg-transparent border-[1px] border-white rounded-full text-white cursor-pointer">
@@ -40,14 +40,13 @@ const Navbar = () => {
           {/* Dropdown */}
           <div className="relative">
             <div className="flex items-center">
-              <div className="btn btn-ghost" onClick={toggleMenu}>
-                <FaBars className="text-white text-2xl" />
+              <div className="btn-ghost" onClick={toggleMenu}>
+                <FaBars className="text-white text-2xl dark:text-white" />
               </div>
             </div>
-            {/* top-[-20px] */}
             {menuOpen && (
               <ul
-                className="bg-base-100 rounded-box z-[1] w-[320px] md:w-[420px] shadow absolute -right-5 top-[-20px]"
+                className="bg-base-100 rounded-box z-[1] w-[320px] md:w-[420px] shadow absolute -right-5 top-[-20px] dark:bg-[#17153B]"
                 style={{ maxWidth: "calc(100vw - 20px)", overflowX: "hidden" }}
               >
                 <div className="px-5 md:px-6">
@@ -62,29 +61,29 @@ const Navbar = () => {
                       </span>
                     </button>
                     <RxCross2
-                      className="text-2xl text-black"
+                      className="text-2xl text-black dark:text-white"
                       onClick={toggleMenu}
                     />
                   </div>
-                  <li className=" hover:bg-blue-100 py-3 rounded-md">
+                  <li className="hover:bg-blue-100 hover:dark:bg-[#2E236C] py-3 rounded-md dark:text-white">
                     <a>The WPPOOL Index</a>
                   </li>
-                  <li className=" hover:bg-blue-100 py-3 rounded-md">
+                  <li className="hover:bg-blue-100 hover:dark:bg-[#2E236C] py-3 rounded-md dark:text-white">
                     <a>All Companies</a>
                   </li>
-                  <li className=" hover:bg-blue-100 py-3 rounded-md">
+                  <li className="hover:bg-blue-100 hover:dark:bg-[#2E236C] py-3 rounded-md dark:text-white">
                     <a>Potential Future Listings</a>
                   </li>
-                  <li className=" hover:bg-blue-100 py-3 rounded-md">
+                  <li className="hover:bg-blue-100 hover:dark:bg-[#2E236C] py-3 rounded-md dark:text-white">
                     <a>State of USA</a>
                   </li>
-                  <li className=" hover:bg-blue-100 py-3 rounded-md">
+                  <li className="hover:bg-blue-100 hover:dark:bg-[#2E236C] py-3 rounded-md dark:text-white">
                     <a>Stories & Ideas</a>
                   </li>
-                  <li className=" hover:bg-blue-100 py-3 rounded-md">
+                  <li className="hover:bg-blue-100 hover:dark:bg-[#2E236C] py-3 rounded-md dark:text-white">
                     <a>About WPPOOL</a>
                   </li>
-                  <li className=" hover:bg-blue-100 py-3 rounded-md">
+                  <li className="hover:bg-blue-100 hover:dark:bg-[#2E236C] py-3 rounded-md dark:text-white">
                     <a>WPPOOL Portfolio Companies</a>
                   </li>
                   <li className="py-4">

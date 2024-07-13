@@ -1,7 +1,7 @@
 import mask from "../../assets/Mask group.png";
 const About = () => {
   return (
-    <div className="px-5 md:px-8 lg:mx-16 mt-10 lg:px-16 py-0  bg-white rounded-xl dark:bg-[#17153B]">
+    <div className="px-5 md:px-8 lg:mx-16 mt-0 lg:px-16 py-0  bg-white rounded-xl dark:bg-[#17153B]">
       <div className="w-full flex flex-col-reverse lg:flex-row lg:justify-between items-center">
         <div className="w-full py-8 md:py-16 lg:py-8">
           <h1 className="text-3xl md:text-5xl font-nantes text-[#191618] dark:text-gray-200">

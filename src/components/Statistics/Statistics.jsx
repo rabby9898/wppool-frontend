@@ -18,7 +18,7 @@ const Statistics = () => {
               <a
                 href="#"
                 aria-label="dashboard"
-                className="relative px-4 py-3 flex items-center space-x-4 rounded-lg text-gray-500 hover:bg-[#2042B6] hover:text-white dark:text-white"
+                className="relative px-4 py-3 flex items-center space-x-4 rounded-lg text-gray-500 hover:bg-[#2042B6] hover:text-white dark:text-gray-300"
               >
                 <div className="w-full flex justify-between items-center">
                   <p className=" font-medium">The Index</p>
@@ -29,7 +29,7 @@ const Statistics = () => {
 
               <a
                 href="#"
-                className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-500 hover:bg-[#2042B6] hover:text-white dark:text-white"
+                className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-500 hover:bg-[#2042B6] hover:text-white dark:text-gray-300"
               >
                 <div className="w-full flex justify-between items-center">
                   <span>The Index Tab Two</span>
@@ -38,7 +38,7 @@ const Statistics = () => {
               </a>
               <a
                 href="#"
-                className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-500 hover:bg-[#2042B6] hover:text-white dark:text-white"
+                className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-500 hover:bg-[#2042B6] hover:text-white dark:text-gray-300"
               >
                 <div className="w-full flex justify-between items-center">
                   <span>The Index Tab Three</span>
@@ -47,7 +47,7 @@ const Statistics = () => {
               </a>
               <a
                 href="#"
-                className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-500 hover:bg-[#2042B6] hover:text-white dark:text-white"
+                className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-500 hover:bg-[#2042B6] hover:text-white dark:text-gray-300"
               >
                 <div className="w-full flex justify-between items-center">
                   <span>The Index Tab Four</span>
@@ -56,7 +56,7 @@ const Statistics = () => {
               </a>
               <a
                 href="#"
-                className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-500 hover:bg-[#2042B6] hover:text-white dark:text-white"
+                className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-500 hover:bg-[#2042B6] hover:text-white dark:text-gray-300"
               >
                 <div className="w-full flex justify-between items-center">
                   <span>The Index Tab Five</span>

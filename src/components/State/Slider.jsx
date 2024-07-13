@@ -52,28 +52,37 @@ const Slider = () => {
         <div className="keen-slider__slide number-slide3">
           <img src={s1} alt="Slide 3" />
         </div>
+        <div className="keen-slider__slide number-slide2">
+          <img src={s2} alt="Slide 2" />
+        </div>
+        <div className="keen-slider__slide number-slide3">
+          <img src={s1} alt="Slide 3" />
+        </div>
+        <div className="keen-slider__slide number-slide2">
+          <img src={s2} alt="Slide 2" />
+        </div>
       </div>
       <div className="flex flex-col md:flex-row md:justify-between items-center">
         <div className="flex justify-start gap-5 items-center">
           <div className="flex justify-start gap-3 items-center">
             <button
-              className="w-auto p-3 lg:p-5 bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl rounded-full text-[#1e43b5] cursor-pointer dark:bg-[#2E236C] dark:text-white"
+              className="w-auto p-3 lg:p-5 bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl rounded-full text-[#1e43b5] cursor-pointer dark:bg-[#2E236C] dark:text-gray-300"
               onClick={handlePrev}
             >
               <FaArrowLeftLong />
             </button>
             <button
-              className="w-auto p-3 lg:p-5 bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl rounded-full text-[#1e43b5] cursor-pointer dark:bg-[#2E236C] dark:text-white"
+              className="w-auto p-3 lg:p-5 bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl rounded-full text-[#1e43b5] cursor-pointer dark:bg-[#2E236C] dark:text-gray-300"
               onClick={handleNext}
             >
               <FaArrowRightLong />
             </button>
           </div>
-          <div className="flex justify-start gap-1 items-center dark:text-white">
+          <div className="flex justify-start gap-1 items-center dark:text-gray-300">
             <p>Pages</p>
             <button
               type="button"
-              className="inline-flex w-[7rem] lg:w-[10rem] font-normal justify-between items-center bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl gap-x-1 rounded-full px-3 lg:px-6 py-3 lg:py-5 mx-auto text-[12px] lg:text-[16px] text-black ring-1 ring-inset ring-gray-300 font-sans dark:bg-[#2E236C] dark:text-white"
+              className="inline-flex w-[7rem] lg:w-[10rem] font-normal justify-between items-center bg-white hover:bg-[#1e43b5] hover:text-white shadow-2xl gap-x-1 rounded-full px-3 lg:px-6 py-3 lg:py-5 mx-auto text-[12px] lg:text-[16px] text-black ring-1 ring-inset ring-gray-300 font-sans dark:bg-[#2E236C] dark:text-gray-300"
               id="menu-button"
               aria-haspopup="true"
             >

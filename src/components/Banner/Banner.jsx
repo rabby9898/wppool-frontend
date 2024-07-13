@@ -1,30 +1,38 @@
 import Navbar from "../navbar/Navbar";
-// import banner1 from "../../assets/banner-1.png";
+import CountUp from "react-countup";
 import "./Banner.css";
 import { IoArrowDownOutline } from "react-icons/io5";
 const Banner = () => {
   // bg-[#2042B6]
   return (
-    <div className="relative bg-[#2042B6] w-full h-[718px] z-50 rounded-2xl shadow-xl dark:bg-[#17153B]">
+    <div className="relative bg-[#2042B6] w-full h-[718px] z-50 rounded-2xl shadow-xl">
       <Navbar />
       <div className="flex flex-row-reverse md:flex-col">
         <div className="banner absolute top-[100px]"></div>
 
         <div className="text-white mt-80 md:mt-24 grid grid-cols-2 md:grid-cols-1 items-center ">
           <div className="my-8  px-10">
-            <h1 className="text-4xl font-nantes">60</h1>
+            <h1 className="text-4xl font-nantes">
+              <CountUp end={60} duration={2.5} />
+            </h1>
             <p className="text-base font-messina">Companies</p>
           </div>
           <div className="my-8  px-10">
-            <h1 className="text-4xl font-nantes">$100B</h1>
+            <h1 className="text-4xl font-nantes">
+              <CountUp end={100} duration={2.5} prefix="$" suffix="B" />
+            </h1>
             <p className="text-base font-messina">Market cap</p>
           </div>
           <div className="my-8  px-10">
-            <h1 className="text-4xl font-nantes">3.5X</h1>
+            <h1 className="text-4xl font-nantes">
+              <CountUp end={3.5} duration={2.5} suffix="X" decimals={1} />
+            </h1>
             <p className="text-base font-messina">Revenue multiple</p>
           </div>
           <div className="my-8  px-10">
-            <h1 className="text-4xl font-nantes">60%</h1>
+            <h1 className="text-4xl font-nantes">
+              <CountUp end={60} duration={2.5} suffix="%" />
+            </h1>
             <p className="text-base font-messina">
               LTM avg. revenue growth rate
             </p>
